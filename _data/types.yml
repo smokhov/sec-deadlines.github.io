@@ -8,7 +8,7 @@
 - name: A*
   tag: TOP4
 - name: Network
-  tag: INFO
+  tag: NET
 - name: System
   tag: SYS
 - name: Database
