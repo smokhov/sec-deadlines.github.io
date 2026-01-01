@@ -7,6 +7,12 @@
   tag: CRYPTO
 - name: A*
   tag: TOP4
+- name: Network
+  tag: INFO
+- name: System
+  tag: SYS
+- name: Database
+  tag: DB
 - name: Conference
   tag: CONF
 - name: Workshop
