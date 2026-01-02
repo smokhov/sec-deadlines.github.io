@@ -11,7 +11,7 @@
     - "2025-11-13 23:59"
   comment: Abstract registration required (1 week before deadline AoE).
   place: San Francisco, California, USA
-  tags: [SEC, PRIV, CONF, TOP4]
+  tags: [SEC, PRIV, CONF, TOP4, USEC]
 
 - name: CCS
   description: ACM Conference on Computer and Communications Security
@@ -24,7 +24,7 @@
   comment: Abstract registration required (1 week before deadline AoE).
   date: November 15-19
   place: The Hague, The Netherlands
-  tags: [SEC, PRIV, CONF, TOP4]
+  tags: [SEC, PRIV, CONF, TOP4, USEC]
 
 - name: USENIX Security
   description: USENIX Security Symposium
@@ -37,7 +37,7 @@
   comment: Abstract registration required (1 week before deadline AoE).
   date: "August 12-14"
   place: Baltimore, MD, USA
-  tags: [SEC, PRIV, CONF, TOP4]
+  tags: [SEC, PRIV, CONF, TOP4, USEC]
 
 - name: NDSS
   description: ISOC Network and Distributed System Security Symposium
@@ -108,13 +108,13 @@
 
 - name: SOUPS
   description: Symposium on Usable Privacy and Security
-  year: 2025
-  link: https://www.usenix.org/conference/soups2025
-  deadline: ["2025-02-13 23:59"]
-  comment: Co-located with USENIX Security. Paper registration due Feb 6 AoE
-  date: August 10-12
-  place: Seattle, WA, USA
-  tags: [SEC, PRIV, CONF]
+  year: 2026
+  link: https://soups.page/
+  deadline: ["2026-02-19 23:59"]
+  comment: Abstract registration required (1 week before deadline AoE).
+  date: August 23-26
+  place: Hannover, Germany
+  tags: [SEC, PRIV, CONF, USEC]
 
 - name: EuroUSEC
   description: European Symposium on Usable Security
@@ -124,7 +124,7 @@
   comment: Paper registration due May 5th AoE
   date: September 10-September 11
   place: Manchester, UK
-  tags: [SEC, PRIV, CONF]
+  tags: [SEC, PRIV, CONF, USEC]
 
 - name: FC
   description: Financial Cryptography and Data Security
@@ -301,7 +301,7 @@
   comment: Rolling deadline every quarter
   date: July 20-25
   place: Calgary, Canada
-  tags: [PRIV, CONF]
+  tags: [PRIV, CONF, USEC]
 
 - name: PLAS
   year: 2025
@@ -320,7 +320,7 @@
   deadline: ["2026-02-13 23:59"]
   date: June 24-25
   place: Urbana-Champaign, USA
-  tags: [PRIV, CONF]
+  tags: [PRIV, CONF, USEC]
 
 # Crypto
 
@@ -1452,7 +1452,7 @@
   comment: Co-located with ACM CCS 2025
   date: October 17
   place: Taipei, Taiwan
-  tags: [SEC, PRIV, SHOP]
+  tags: [SEC, PRIV, SHOP, USEC]
 
 - name: RICSS
   description: Workshop on Re-design Industrial Control Systems with Security
@@ -1512,7 +1512,6 @@
   place: Edinburgh, UK
   tags: [SEC, SHOP]
 
-
 - name: NextG-Sec
   description: NextG Networks Cryptography and Security (NextG-Sec) 
   year: 2026
@@ -1533,3 +1532,50 @@
   date: May 10
   place: Rome, Italy
   tags: [SEC, CRYPTO, SHOP]
+
+- name: AI-SS
+  description: International Workshop on AI Safety and Security
+  year: 2026
+  link: https://cyber.kent.ac.uk/events/AI-SS2026/index.html
+  deadline: ["2026-01-19 23:59"]  # must be a list
+  comment: Co-located with EDCC 2026 (21st European Dependable Computing Conference)
+  timezone: UTC
+  date: April 7
+  place: Canterbury, UK
+  tags: [SEC, SHOP]
+
+
+
+# Usable Security and HCI
+
+- name: CHI
+  description: ACM CHI Conference on Human Factors in Computing Systems
+  year: 2026
+  link: https://chi2026.acm.org/
+  deadline: ["2025-09-11 23:59"]
+  comment: Title and abstract deadline on September 4
+  date: "April 13-17"
+  place: Barcelona, Spain
+  tags: [USEC, CONF]
+
+- name: CSCW
+  description: ACM Conference on Computer-Supported Cooperative Work and Social Computing
+  year: 2026
+  link: https://cscw.acm.org/2026/
+  deadline:
+    - "2025-05-13 23:59"
+  date: "October/November 2026"
+  place: TBA
+  tags: [USEC, CONF]
+
+- name: IMWUT / UbiComp
+  description: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies
+  year: 2025
+  link: https://dl.acm.org/journal/imwut
+  deadline:
+    - "2025-02-01 23:59"
+    - "2025-05-01 23:59"
+    - "2025-11-01 23:59"
+  date: October 12-16
+  place: Espoo, Finland
+  tags: [USEC, CONF]

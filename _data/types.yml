@@ -1,10 +1,13 @@
 ---
 - name: Security
   tag: SEC
+  default: false
 - name: Privacy
   tag: PRIV
+  default: false
 - name: Crypto
   tag: CRYPTO
+  default: false
 - name: A*
   tag: TOP4
 - name: Network
@@ -15,5 +18,11 @@
   tag: DB
 - name: Conference
   tag: CONF
+  default: false
 - name: Workshop
   tag: SHOP
+  default: false
+- name: Usable security
+  tag: USEC
+  default: true
+  
