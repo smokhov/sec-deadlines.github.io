@@ -54,8 +54,18 @@ $(function() {
       function make_update_countdown_fn(confDeadline) {
         return function(event) {
           diff = moment() - confDeadline
-          if (diff <= 0) {
-             $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          if (diff <= -1000*60*60*24*7*12) {
+             $(this).html(event.strftime('%-m months'));
+          } else if (diff <= -1000*60*60*24*7) {
+             $(this).html(event.strftime('%-D days'));
+          } else if (diff <= -1000*60*60*24*2) {
+             $(this).html(event.strftime('%-D days %Hh'));
+          } else if (diff <= -1000*60*60*24) {
+             $(this).html(event.strftime('%-D day %Hh'));
+          } else if (diff <= -1000*60*60) {
+             $(this).html(event.strftime('%Hh %Mm'));
+          } else if (diff < 0) {
+             $(this).html(event.strftime('%Hh %Mm %Ss'));
           } else {
             $(this).html(confDeadline.fromNow());
           }
@@ -97,18 +107,22 @@ $(function() {
   // Set checkboxes
   var conf_type_data = {{ site.data.types | jsonify }};
   var all_tags = [];
+  var default_tags = []
   var toggle_status = {};
   for (var i = 0; i < conf_type_data.length; i++) {
     all_tags[i] = conf_type_data[i]['tag'];
     toggle_status[all_tags[i]] = false;
+    if(conf_type_data[i]['default']) {
+      default_tags.push(conf_type_data[i]['tag']);
+    }
   }
   var tags = store.get('{{ site.domain }}');
   if (tags === undefined) {
-    tags = all_tags;
+    tags = default_tags;
   }
   for (var i = 0; i < tags.length; i++) {
-    $('#' + tags[i] + '-checkbox').prop('checked', false);
-    toggle_status[tags[i]] = false;
+    $('#' + tags[i] + '-checkbox').prop('checked', true);
+    toggle_status[tags[i]] = true;
   }
   store.set('{{ site.domain }}', tags);
 
