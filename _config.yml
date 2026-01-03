@@ -1,7 +1,9 @@
 title: Security and Privacy Conference Deadlines
 description: Countdowns to top Security and Privacy conference deadlines.
+author: Bogdan Kulynych
 
-domain: "sec-deadlines.github.io"
+#domain: "sec-deadlines.github.io"
+domain: "smokhov.github.io"
 baseurl: ""
 
 twitter_username: hiddenmarkov
